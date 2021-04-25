@@ -1,0 +1,24 @@
+                 SECTION B.2:
+                 NAVIGATION:
+After so much surfing in the internet , I found out that the effetive
+way to respond to changes in environment and give correct output
+relies on what the control architecture for navigation is selected
+and in what proportion.
+Hybrid architecture which combines the feature of both
+deliberative and reactive architecture is taken with more
+proportion of reactive architecture because the reactive model
+responds to aptly to the weather uncertainity. The main focus of
+reactive model is to behave according to stimuli so there isn’t
+much planning here.
+
+
+
+
+
+
+
+
+
+Source:
+https://www.intechopen.com/books/advances-in-robot-navigation/conceptual-bases-of-robot-
+navigation-modeling-control-and-applications

@@ -1,0 +1,8 @@
+prefix=/home/balakumar/catkin_ws/install
+
+Name: taska
+Description: Description of taska
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

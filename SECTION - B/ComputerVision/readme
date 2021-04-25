@@ -1,0 +1,10 @@
+1)Object_detect    - For drawing bounding boxes around orange-white obstacle
+                     Managed to get the answer nearly because I couldn't find the proper contour to draw boxes around the obstacle as part of it gets removed when removing some unwanted noise.
+
+2)Pesdetrian detect- For drawing bounding box aroung moving people in the video
+
+
+
+#SOURCE:
+https://docs.opencv.org/master/d9/df8/tutorial_root.html
+https://thedatafrog.com/en/articles/human-detection-video/

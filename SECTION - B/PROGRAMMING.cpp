@@ -1,10 +1,11 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
  // Algorithm: The midpoint of the range where 1's are present is the position to which the minimum swaps can occur
 int main() 
 {  
-    long long int n,a[100000],i,ans=0,io=INT_MAX,fo=0,mid=0;
+    long long int n,a[100000],i,ans=0,mid=0,ones[100000],k=0;
     //Getting value of n
     cout<<"Enter value of n: ";
     cin>>n;
@@ -14,27 +15,23 @@ int main()
     for(i=0;i<n;i++)
     {
         cin>>a[i];
-        if(a[i]==1 && i<io)
-        {
-            io=i;      // Storing the index of first 1 present in array into io
-        } 
          if(a[i]==1 )
          {
-             fo=i;     // Storing the index of last 1 present in array into fo
+            ones[k]=i;     // Storing the index of 1's present in array into ones
+            k++;
          }
     }
-    mid=(fo+io+1)/2;   // Storing the index of midpoint of range of 1's present in array into mid
 
-    // Iterating from io to fo to find minimum number of swaps to group all 1's together   
-    for(i=io;i<=fo;i++)
-    {
-         
-        if(a[i]==1 && i!=mid)
-        {
-            ans+=abs(mid-i)-1;     // ans = Storing number of swaps 
-                        
+    
 
-        }
+    mid=(k)/2;   // Storing the index of midpoint of range of 1's present in array into mid
+
+    // Iterating from 0 to k to find minimum number of swaps to group all 1's together   
+    
+    for(i=0;i<k;i++)
+    {        
+        ans+=abs(ones[mid]-ones[i])-abs(mid-i);     // ans = Storing number of swaps
+                                                    // The difference between the index of ones indicate numbers present between 
     }
     // Printing the result
     cout<<"Minimum number of swaps: "<<ans;    

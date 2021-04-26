@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -30,8 +29,10 @@ int main()
     
     for(i=0;i<k;i++)
     {        
-        ans+=abs(ones[mid]-ones[i])-abs(mid-i);     // ans = Storing number of swaps
-                                                    // The difference between the index of ones indicate numbers present between 
+        ans+=abs(ones[mid]-ones[i])-abs(mid-i);    // abs(ones[mid]-ones[i])-abs(mid-i) gives count of number of swaps to reach the desired position
+                                                    // abs(ones[mid]-ones[i]) gives count of numbers between the mid and the ith 1(inclusive of the ith 1)
+                                                     // abs(mid-i) gives count of 1's between the mid and the ith 1(inclusive of the ith 1)
+                                                     
     }
     // Printing the result
     cout<<"Minimum number of swaps: "<<ans;    

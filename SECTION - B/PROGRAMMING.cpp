@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
- // Algorithm: The midpoint of the range where 1's are present is the position to which the minimum swaps can occur
+ // Algorithm: The midpoint of the range where 1's are present is the position to which the minimum swaps can occur to group all 1's
 int main() 
 {  
     long long int n,a[100000],i,ans=0,mid=0,ones[100000],k=0;
@@ -29,7 +29,7 @@ int main()
     
     for(i=0;i<k;i++)
     {        
-        ans+=abs(ones[mid]-ones[i])-abs(mid-i);    // abs(ones[mid]-ones[i])-abs(mid-i) gives count of number of swaps to reach the desired position
+        ans+=abs(ones[mid]-ones[i])-abs(mid-i);    // abs(ones[mid]-ones[i])-abs(mid-i) gives count of number of swaps for ith 1 to reach the desired position
                                                     // abs(ones[mid]-ones[i]) gives count of numbers between the mid and the ith 1(inclusive of the ith 1)
                                                      // abs(mid-i) gives count of 1's between the mid and the ith 1(inclusive of the ith 1)
                                                      
